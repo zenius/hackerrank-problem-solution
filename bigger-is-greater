@@ -1,0 +1,43 @@
+function biggerIsGreater(w) {
+    let wArray = w.split(""); 
+
+    // find the longest decreasing sequence
+    let head = wArray.length - 1; 
+    while (head > 0 && wArray[head - 1] >= wArray[head]) { 
+        head--; 
+    }
+
+    // end of permutation 
+    if (head <= 0) { 
+        return "no answer"; 
+    }
+
+    let pivot = head - 1; 
+    // find the rightmost element which exceeds the pivot 
+    let j = wArray.length - 1; 
+    while (j > 0 && wArray[pivot] >= wArray[j]) { 
+        j--; 
+    }
+
+    // swap the pivot with next highest number 
+    let temp = wArray[pivot]; 
+    wArray[pivot] = wArray[j]; 
+    wArray[j] = temp; 
+
+    // reverse the non-decreasing sequence 
+    j = wArray.length - 1; 
+    while (head < j) { 
+        temp = wArray[j]; 
+        wArray[j] = wArray[head]; 
+        wArray[head] = temp; 
+        head++; 
+        j--; 
+    }
+    return wArray.join(""); 
+}
+
+console.log(biggerIsGreater("ab")); // ba 
+console.log(biggerIsGreater("bb")); // no answer
+console.log(biggerIsGreater("hefg")); // hegf 
+console.log(biggerIsGreater("dhck")); // dhkc 
+console.log(biggerIsGreater("dkhc")); // hcdk
