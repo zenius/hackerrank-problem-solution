@@ -10,3 +10,7 @@ Problem Link: https://www.hackerrank.com/challenges/bigger-is-greater/problem <b
 ## minimum swaps 2
 Problem Link: https://www.hackerrank.com/challenges/minimum-swaps-2/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/minimum-swaps-2">Solution</a>
+
+## 2D array
+Problem Link: https://www.hackerrank.com/challenges/2d-array/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/2d-array">Solution</a>
