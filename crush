@@ -1,0 +1,31 @@
+
+function arrayManipulation(n, queries) {
+  let array = Array(n).fill(0); 
+  let queriesLength = queries.length; 
+  for(let i = 0; i < queriesLength ; i++) {
+    let startIndex = queries[i][0] - 1; 
+    let endIndex = queries[i][1]; 
+    let addend = queries[i][2]; 
+
+    array[startIndex] += addend;
+    if(endIndex < n) { 
+      array[endIndex] -= addend; 
+    }
+  }
+
+  console.log(array); 
+  let arrayLength = array.length; 
+  let largestValue = 0, tempValue = 0; 
+  for(let i = 0 ; i < arrayLength; i++) { 
+    tempValue += array[i]; 
+    if(largestValue < tempValue) { 
+      largestValue = tempValue; 
+    }
+  }
+
+  return largestValue; 
+}
+
+console.log(arrayManipulation(5, [ [1,2,100], [2,5,100], [3,4,100]])); // 200	
+console.log(arrayManipulation(10,[[1,5,3], [4,8,7],[6,9,1]])); // 10
+console.log(arrayManipulation(10,[[2,6,8],[3, 5, 7],[1,8,1], [5,9,15]])); // 31
