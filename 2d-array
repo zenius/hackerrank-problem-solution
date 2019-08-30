@@ -1,0 +1,17 @@
+function hourglassSum(array) {
+    const arrayLength = array.length; 
+
+    let largestSum, tempSum = 0; 
+    for (let i = 0; i < arrayLength - 2; i++) {
+        for (let j = 0; j < arrayLength - 2; j++) { 
+            tempSum = array[i][j] + array[i][j+1] + array[i][j+2] +
+                array[i + 1][j+1] +
+                array[i + 2][j] + array[i + 2][j+1] + array[i + 2][j+2];
+            if (largestSum === undefined || largestSum < tempSum) { 
+                largestSum = tempSum; 
+            } 
+        }
+    }
+
+    return largestSum;
+}
