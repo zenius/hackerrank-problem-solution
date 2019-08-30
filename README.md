@@ -1,4 +1,4 @@
-# hackerrank-problem-solving
+# hackerrank-problem-solution
 
 This repo will contain the solution to the hackerrank problem solving module. 
 
