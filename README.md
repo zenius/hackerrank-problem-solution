@@ -14,3 +14,7 @@ Problem Link: https://www.hackerrank.com/challenges/minimum-swaps-2/problem <br>
 ## 2D array
 Problem Link: https://www.hackerrank.com/challenges/2d-array/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/2d-array">Solution</a>
+
+## Crush
+Problem Link: https://www.hackerrank.com/challenges/crush/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/crush">Solution</a>
