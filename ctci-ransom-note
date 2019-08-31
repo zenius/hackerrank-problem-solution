@@ -1,0 +1,49 @@
+
+function createHashMap(array) { 
+  let hashMap = {}; 
+  let arrayLength = array.length; 
+
+  for(let i = 0; i < arrayLength; i++) { 
+    if(hashMap[array[i]] === undefined) { 
+      hashMap[array[i]] =  1;
+    } else  { 
+      let key = array[i]; 
+      let frequency = hashMap[key]; 
+      hashMap[key] = frequency + 1; 
+    }
+  }
+  return hashMap; 
+}
+
+function createArray(string, separator) { 
+  return string.split(separator);
+}
+
+function checkMagazine(magazine, note) {
+  const magazineArray = createArray(magazine, ' '); 
+  const noteArray = createArray(note,' ');
+
+  const magazineHashMap = createHashMap(magazineArray);
+  const noteHashMap = createHashMap(noteArray); 
+
+  const noteKeys = Object.keys(noteHashMap); 
+
+  for(let key of noteKeys) { 
+    if(magazineHashMap[key]) { 
+      let frequency1 = noteHashMap[key];
+      let frequency2 = magazineHashMap[key]; 
+
+      if(frequency1 > frequency2) { 
+        return 'No'; 
+      }
+    } else { 
+      return 'No'; 
+    }
+  }
+  return 'Yes'; 
+}
+
+console.log(checkMagazine('Attack at dawan', 'attack at dawn'));
+console.log(checkMagazine('give me one grand today night', 'give one grand today'));
+console.log(checkMagazine('ive got a lovely bunch of coconuts','ive got some coconuts'));
+console.log(checkMagazine('two times three is not four', 'two times two is four'));
