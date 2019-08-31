@@ -43,7 +43,7 @@ function checkMagazine(magazine, note) {
   return 'Yes'; 
 }
 
-console.log(checkMagazine('Attack at dawan', 'attack at dawn'));
-console.log(checkMagazine('give me one grand today night', 'give one grand today'));
-console.log(checkMagazine('ive got a lovely bunch of coconuts','ive got some coconuts'));
-console.log(checkMagazine('two times three is not four', 'two times two is four'));
+console.log(checkMagazine('Attack at dawan', 'attack at dawn')); // No
+console.log(checkMagazine('give me one grand today night', 'give one grand today')); // Yes
+console.log(checkMagazine('ive got a lovely bunch of coconuts','ive got some coconuts')); // No
+console.log(checkMagazine('two times three is not four', 'two times two is four')); // No
