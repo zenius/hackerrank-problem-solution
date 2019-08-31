@@ -3,19 +3,19 @@
 This repo will contain the solution to the hackerrank problem solving module. 
 
 
-## Bigger is greater 
+## Bigger is Greater 
 Problem Link: https://www.hackerrank.com/challenges/bigger-is-greater/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/bigger-is-greater">Solution</a>
 
-## Minimum swaps 2
+## Minimum Swaps 2
 Problem Link: https://www.hackerrank.com/challenges/minimum-swaps-2/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/minimum-swaps-2">Solution</a>
 
-## 2D array
+## 2D Array - DS
 Problem Link: https://www.hackerrank.com/challenges/2d-array/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/2d-array">Solution</a>
 
-## Crush
+## Array Manipulation
 Problem Link: https://www.hackerrank.com/challenges/crush/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/crush">Solution</a>
 
