@@ -1,0 +1,28 @@
+
+function comparison(a, b) { 
+  return a - b; 
+}
+
+function sortArray(array) { 
+  return [...array].sort(comparison); 
+}
+
+function maximumToys(prices, money) {
+  const sortedPrices = sortArray(prices); 
+
+  const length = prices.length; 
+  let toyCount = 0; 
+
+  for(let i = 0; i < length; i++) { 
+    money -= sortedPrices[i]; 
+    if(money < 0 ){ 
+      break; 
+    } else { 
+      toyCount++; 
+    }
+  }
+
+  return toyCount;
+}
+
+console.log(maximumToys([1, 12, 5, 111, 200, 1000, 10], 50));  // 4
