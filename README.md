@@ -22,3 +22,8 @@ Problem Link: https://www.hackerrank.com/challenges/crush/problem <br>
 ## Hash Tables: Ransom Note
 Problem Link: https://www.hackerrank.com/challenges/ctci-ransom-note/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/ctci-ransom-note">Solution</a>
+
+
+## Two Strings
+Problem Link: https://www.hackerrank.com/challenges/two-strings/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/two-strings">Solution</a>
