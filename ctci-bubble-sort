@@ -1,0 +1,31 @@
+
+function countSwaps(array) {
+  const arrayLength = array.length;
+
+  let swapCount = 0;
+
+  // bubble sort implementation 
+  // outer loop: number of passes
+  
+  for (let i = 0; i < arrayLength - 1; i++) {
+    
+    // inner loop: number of comparison  
+    for (let j = 0; j < arrayLength - i - 1; j++) {
+      if (array[j] > array[j + 1]) {
+       
+       // swap the position values 
+        let temp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
+
+        swapCount++;
+      }
+    }
+  }
+
+  console.log(`Array is sorted in ${swapCount} swaps.`); // Array is sorted in 3 swaps.
+  console.log(`First Element: ${array[0]}`); // First Element: 1
+  console.log(`Last Element: ${array[arrayLength - 1]}`); // Last Element: 3
+}
+
+countSwaps([3, 2, 1]); 
