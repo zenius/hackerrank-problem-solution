@@ -27,3 +27,8 @@ Problem Link: https://www.hackerrank.com/challenges/ctci-ransom-note/problem <br
 ## Two Strings
 Problem Link: https://www.hackerrank.com/challenges/two-strings/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/two-strings">Solution</a>
+
+
+## Sorting: Bubble Sort
+Problem Link: https://www.hackerrank.com/challenges/ctci-bubble-sort/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/ctci-bubble-sort">Solution</a>
