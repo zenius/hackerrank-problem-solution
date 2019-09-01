@@ -32,3 +32,7 @@ Problem Link: https://www.hackerrank.com/challenges/two-strings/problem <br>
 ## Sorting: Bubble Sort
 Problem Link: https://www.hackerrank.com/challenges/ctci-bubble-sort/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/ctci-bubble-sort">Solution</a>
+
+## Mark and Toys
+Problem Link: https://www.hackerrank.com/challenges/mark-and-toys/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/mark-and-toys">Solution</a>
