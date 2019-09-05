@@ -36,3 +36,7 @@ Problem Link: https://www.hackerrank.com/challenges/ctci-bubble-sort/problem <br
 ## Mark and Toys
 Problem Link: https://www.hackerrank.com/challenges/mark-and-toys/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/mark-and-toys">Solution</a>
+
+## Strings: Making Anagrams
+Problem Link: https://www.hackerrank.com/challenges/ctci-making-anagrams/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/ctci-making-anagrams">Solution</a>
