@@ -1,0 +1,57 @@
+
+const createHashMap = function(array) {
+  const length = array.length; 
+  let hashMap = {};
+
+  for(let i = 0; i < length; i++) {
+    if(hashMap[array[i]] === undefined) {
+      hashMap[array[i]] = 1;  
+    } else {
+      let key = array[i]; 
+      let value = hashMap[array[i]];
+
+      hashMap[key] = value + 1; 
+    }
+  }
+  return hashMap;
+}
+
+const createArray = function(array, separator = '') {
+  return array.split(separator);
+}
+
+const makeAnagram = function(firstString, secondString) {
+  const firstStringArray = createArray(firstString);
+  const secondStringArray = createArray(secondString);
+
+  const firstStringHashMap = createHashMap(firstStringArray); 
+  const secondStringHashMap = createHashMap(secondStringArray);
+
+  let firstStringKeys = Object.keys(firstStringHashMap); 
+  let secondStringKeys = Object.keys(secondStringHashMap); 
+  let deleteCount = 0; 
+
+  for(let key of firstStringKeys) {
+    if(secondStringHashMap[key] === undefined) {
+      // count the characters in the first string - to be removed
+        deleteCount += firstStringHashMap[key]; 
+    } else { 
+      let frequency1 = firstStringHashMap[key]; 
+      let frequency2 = secondStringHashMap[key]; 
+
+      // count the common characters difference in first and second string - to be removed 
+      if(Math.abs(frequency1 - frequency2) > 0) {
+        deleteCount += Math.abs(frequency1 - frequency2);
+      }
+    }
+  }
+
+  for(let key of secondStringKeys) {
+    if(firstStringHashMap[key] === undefined) {
+       // count the characters in the second string - to be removed
+        deleteCount +=secondStringHashMap[key];
+    }
+  }
+
+  return deleteCount;
+}
