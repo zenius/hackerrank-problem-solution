@@ -40,3 +40,7 @@ Problem Link: https://www.hackerrank.com/challenges/mark-and-toys/problem <br>
 ## Strings: Making Anagrams
 Problem Link: https://www.hackerrank.com/challenges/ctci-making-anagrams/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/ctci-making-anagrams">Solution</a>
+
+## Alternating Characters 
+Problem Link: https://www.hackerrank.com/challenges/alternating-characters/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/alternating-characters">Solution</a>
