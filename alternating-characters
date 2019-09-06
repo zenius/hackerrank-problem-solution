@@ -1,0 +1,25 @@
+
+const createArray = function(string, separator = '') {
+  return string.split(separator);
+}
+
+const alternatingCharacters = function(string) {
+  const array = createArray(string);
+  const length = array.length; 
+
+  let currentElement = array[0];
+  let nextElement = array[1];
+  
+  let deleteCount = 0; 
+
+  for(let i = 1; i < length; i++) { 
+    if(currentElement === nextElement) { 
+      deleteCount++; 
+    } else { 
+      currentElement = nextElement;
+    }
+    nextElement = array[i + 1];
+  }
+  
+  return deleteCount;
+}
