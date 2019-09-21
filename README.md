@@ -44,3 +44,8 @@ Problem Link: https://www.hackerrank.com/challenges/ctci-making-anagrams/problem
 ## Alternating Characters 
 Problem Link: https://www.hackerrank.com/challenges/alternating-characters/problem <br>
 <a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/alternating-characters">Solution</a>
+
+
+## Pairs
+Problem Link: https://www.hackerrank.com/challenges/pairs/problem <br>
+<a href="https://github.com/zenius/hackerrank-problem-solving/blob/master/pairs">Solution</a>
