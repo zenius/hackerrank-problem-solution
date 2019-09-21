@@ -1,0 +1,27 @@
+
+const sortArray = function(array) {
+  return [...array].sort((a, b) => a - b); 
+}
+
+const pairs = function(target, array) {
+  const sortedArray = sortArray(array); 
+  
+  let pairCount = 0; 
+  let current = 0, next = 1; 
+
+  while(next < sortedArray.length) {
+      let difference = sortedArray[next] - sortedArray[current]; 
+
+      if(difference === target) {
+        pairCount++; 
+        current++; 
+        next++; 
+      } else if(difference < target) {
+        next++; 
+      } else if(difference > target) {
+        current++; 
+      }
+  }
+  
+  return pairCount; 
+}
